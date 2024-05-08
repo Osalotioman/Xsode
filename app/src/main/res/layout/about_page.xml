@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Xsode"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app was developed to assist individuals with malfunctioning loudspeakers on their devices. It serves as a media player that bypasses the typical speaker channels, allowing users to listen to media content via alternative audio pathways."
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The inspiration behind this app came from the need to provide a solution for my cousin, whose phone's loudspeaker was not functioning properly. By developing this app, I aimed to offer a practical and accessible tool for individuals facing similar challenges."
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you for using this app. Your support and feedback are greatly appreciated."
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>
