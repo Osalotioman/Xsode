@@ -10,9 +10,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.ImageButton
 import android.widget.ListView
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -123,14 +121,14 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-        val btnToggleVal = findViewById<ImageButton>(R.id.btn_toggle)
-        btnToggleVal.setOnClickListener {
+        //val btnToggleVal = findViewById<ImageButton>(R.id.btn_toggle)
+        /*btnToggleVal.setOnClickListener {
             // This code will be executed when the button is clicked
             searchAndDisplayMusicFiles()
             Toast.makeText(this, "5/8/2024Button clicked! $musicFilePaths", Toast.LENGTH_SHORT).show()
             drawerLayout.open()
             //drawerLayout.openDrawer(GravityCompat.END)
-        }
+        }*/
         val settings = listOf("Use Loudspeaker")
         val settingAdapter = SettingAdapter(this, settings)
        // val listView = findViewById<ListView>(R.id.settings_list_view) // Adjust to your actual ListView ID
@@ -177,6 +175,7 @@ class MainActivity : AppCompatActivity() {
             }
         )
     }
+    //Needs to be able to update playing music when speaker setting is changed
     private fun updatePlayback(isLoudspeaker: Boolean) {
         mediaPlayer?.let { player ->
             if (player.isPlaying) {
